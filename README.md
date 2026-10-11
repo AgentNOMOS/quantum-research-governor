@@ -14,6 +14,8 @@ Measurements → Independent Witness → Decision → Limits) explains every ste
 measurements from LOCAL demonstrations, and exports evidence that anyone can re-verify offline.
 
 ## Run it in Qollab
+**Public Qollab project (package B):** https://qollab.xyz/u/agentnomos/quantum-research-governor —
+open it, choose the built-in simulator and press **Run**. To run your own copy instead:
 Upload `qrg_r2_B_zfault_app.zip` (primary: synthetic phase fault) or `qrg_r2_A_clean_app.zip`
 (clean-state control), choose the built-in simulator, press **Run**. One Run = one bridge call = one
 bare `QuantumCircuit` on the injected backend; no UI control can start another job.
@@ -42,6 +44,9 @@ clean state 0/2000 nontrivial syndromes → ACCEPT; synthetic phase fault 413/20
 ZZZZ syndromes, one-sided bounds [0.1917, 0.2220] ⊂ [0.15, 0.25] → ACCEPT; both independently
 VERIFIED. Details and what is *not* live: [`docs/QOLLAB_LIVE_EVIDENCE.md`](docs/QOLLAB_LIVE_EVIDENCE.md).
 No run used IonQ hardware or the IonQ cloud.
+These counts are reference observations from those specific runs, not guaranteed outcomes: every new
+Run is a fresh random sample, so its counts (and, rarely, its verdict) will generally differ — see
+[`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 
 ## Repository map
 | path | content |

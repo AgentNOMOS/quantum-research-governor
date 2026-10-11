@@ -88,7 +88,7 @@ educational implementation inspired by the team's research-governance approach; 
 other projects. Qiskit (Apache-2.0) is used through Qollab. No third-party JavaScript libraries.
 
 ## Reproduce
-Source (MIT): **[GitHub URL — to be added]** · Demo video: **[public video URL — to be added]**
+Source (MIT): **https://github.com/AgentNOMOS/quantum-research-governor** · Live app: **https://qollab.xyz/u/agentnomos/quantum-research-governor** · Demo video: **[public video URL — to be added]**
 `pip install -r requirements.txt`, `pytest -q`, `node --test tests/js/*.test.mjs`, and
 `python verifier/verify_qrg.py evidence.json` for any copied evidence record. `scripts/build_packages_r2.py`
 rebuilds the exact Qollab ZIPs (SHA-256 published in the repository).
