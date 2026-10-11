@@ -1,0 +1,67 @@
+<div id="qrg-app" class="qrg">
+  <header class="hero">
+    <p class="eyebrow">Quantum Research Governor · [[4,2,2]] error detection · Qollab</p>
+    <h1 class="hero-q">A quantum experiment produced measurements.<br><span>Does the evidence actually justify the claim?</span></h1>
+    <div id="qrg-status" class="status" role="status" aria-live="polite">
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="qrg-status-text">Starting… this Run submits exactly one quantum circuit to the Qollab backend.</span>
+    </div>
+    <div id="qrg-hero-verdict" class="hero-verdict" hidden></div>
+    <div class="legend" aria-label="Data labels">
+      <span class="badge live">LIVE · measured in this Run</span>
+      <span class="badge local">LOCAL · computed without a quantum job</span>
+    </div>
+  </header>
+
+  <nav class="stepper" role="tablist" aria-label="Scenes">
+    <button role="tab" id="tab-a" aria-controls="scene-a" aria-selected="true" data-scene="a"><b>A</b><span>Proposal</span></button>
+    <button role="tab" id="tab-b" aria-controls="scene-b" aria-selected="false" data-scene="b" tabindex="-1"><b>B</b><span>Circuit</span></button>
+    <button role="tab" id="tab-c" aria-controls="scene-c" aria-selected="false" data-scene="c" tabindex="-1"><b>C</b><span>Measurements</span></button>
+    <button role="tab" id="tab-d" aria-controls="scene-d" aria-selected="false" data-scene="d" tabindex="-1"><b>D</b><span>Witness</span></button>
+    <button role="tab" id="tab-e" aria-controls="scene-e" aria-selected="false" data-scene="e" tabindex="-1"><b>E</b><span>Decision</span></button>
+    <button role="tab" id="tab-f" aria-controls="scene-f" aria-selected="false" data-scene="f" tabindex="-1"><b>F</b><span>Limits</span></button>
+  </nav>
+
+  <main class="scenes">
+    <section id="scene-a" class="scene" role="tabpanel" aria-labelledby="tab-a">
+      <h2>A · The research proposal</h2>
+      <p class="lede">Before any quantum job, the governor checks whether running the experiment is justified at all.</p>
+      <div id="a-body" class="body"><p class="muted">Waiting for the Run…</p></div>
+    </section>
+    <section id="scene-b" class="scene" role="tabpanel" aria-labelledby="tab-b" hidden>
+      <h2>B · The quantum circuit</h2>
+      <p class="lede">Seven qubits: four data qubits hold an encoded state, two ancillas ask two parity questions, one qubit injects a labelled synthetic fault.</p>
+      <div id="b-body" class="body"><p class="muted">Waiting for the Run…</p></div>
+    </section>
+    <section id="scene-c" class="scene" role="tabpanel" aria-labelledby="tab-c" hidden>
+      <h2>C · The measurements</h2>
+      <p class="lede">Only counts returned by the backend in this Run are shown as LIVE.</p>
+      <div id="c-body" class="body"><p class="muted">Waiting for the Run…</p></div>
+    </section>
+    <section id="scene-d" class="scene" role="tabpanel" aria-labelledby="tab-d" hidden>
+      <h2>D · The independent witness</h2>
+      <p class="lede">A separate verifier recomputes everything from the raw counts. Stored PASS flags are never trusted.</p>
+      <div id="d-body" class="body"><p class="muted">Waiting for the Run…</p></div>
+    </section>
+    <section id="scene-e" class="scene" role="tabpanel" aria-labelledby="tab-e" hidden>
+      <h2>E · The governor decision</h2>
+      <p class="lede">Four possible verdicts. Only the first card is the live verdict of this Run.</p>
+      <div id="e-body" class="body"><p class="muted">Waiting for the Run…</p></div>
+    </section>
+    <section id="scene-f" class="scene" role="tabpanel" aria-labelledby="tab-f" hidden>
+      <h2>F · What the evidence cannot prove</h2>
+      <p class="lede">A trustworthy governor says what it does <em>not</em> know.</p>
+      <div id="f-body" class="body"><p class="muted">Waiting for the Run…</p></div>
+    </section>
+  </main>
+
+  <div class="pager">
+    <button id="qrg-prev" class="ghost" type="button">← Previous</button>
+    <button id="qrg-next" class="primary" type="button">Next scene →</button>
+  </div>
+
+  <footer class="foot">
+    <p>This effort is supported by Qollab &amp; IonQ. · AgentNOMOS Quantum Lab · MIT licence · Built with AI assistance (see README).</p>
+    <p class="muted">Ideal built-in simulator. Synthetic faults are labelled. No hardware, fidelity, fault-tolerance or quantum-advantage claim.</p>
+  </footer>
+</div>

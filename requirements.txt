@@ -1,0 +1,5 @@
+# QRG-R0 — tested with Python 3.13.5
+qiskit==2.5.2      # QuantumCircuit + BasicSimulator (built-in, no credentials)
+pytest==9.1.1      # tests only
+# Transitive (installed by qiskit, not imported directly by qrg): numpy 2.5.3, scipy 1.18.1, rustworkx 0.18.1
+# qrg.witness_sim, qrg.stats, qrg.governor are pure Python (no numpy/scipy/qiskit).

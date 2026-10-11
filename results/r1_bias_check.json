@@ -1,0 +1,5 @@
+{"purpose": "check that the synthetic stochastic Z channel (nominal p=0.2) is unbiased on BasicSimulator",
+ "runs": 100, "shots_per_run": 2000, "seeds": "5000..5099",
+ "pooled_sX_rate": 0.19984, "pooled_two_sided_95": [0.19808, 0.20159],
+ "runs_with_0.2_outside_two_sided_95": "2/100 (expected about 5/100)",
+ "context": "an earlier unseeded reference run gave 362/2000 = 0.181 (0.2 outside its two-sided CI); the governed TOST claim still ACCEPTed correctly"}
